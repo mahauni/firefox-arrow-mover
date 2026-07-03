@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Arrow Mover",
+  "version": "1.0",
+  "description": "Switch between tabs with Ctrl+Alt+Left and Ctrl+Alt+Right. No setup, no data collection — just move through your tabs with the arrow keys.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "arrow-mover@mahauni",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "next-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+Right"
+      },
+      "description": "Switch to the next tab"
+    },
+    "prev-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+Left"
+      },
+      "description": "Switch to the previous tab"
+    }
+  }
+}
